@@ -22,6 +22,9 @@ jobs:
       - name: Fetch tags
         run: git fetch --tags
 
+      - name: Add SDL 1.2 repo
+        run: brew tap Kreeblah/sdl-tap
+
       - name: Install build dependencies
         run: brew install cmake dylibbundler
 
